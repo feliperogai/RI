@@ -1,53 +1,79 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de Alexia Denardi</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexia Denardi | Relações Internacionais</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" href="images/icon.png">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Sobre Mim</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="hero" id="home">
+      <h1>Alexia Denardi</h1>
+      <p id="subtitulo"></p>
+      <a href="#projetos" class="btn">Conheça meu trabalho</a>
+    </div>
+  </header>
 
-    <section id="home" class="hero">
-        <h1>Bem-vindo ao Portfólio de Alexia Denardi</h1>
-        <p>Estudante de Relações Internacionais na FECAP</p>
-    </section>
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <div class="sobre-content">
+      <img src="images/alexia.png" alt="Alexia Denardi">
+      <p>
+        Sou estudante de Relações Internacionais na FECAP, apaixonada por diplomacia, comércio internacional e política global. 
+        Tenho experiência em pesquisas acadêmicas e simulações de organizações internacionais.
+      </p>
+    </div>
+  </section>
 
-    <section id="about" class="about">
-        <h2>Sobre Mim</h2>
-        <p>Sou uma apaixonada por diplomacia e relações internacionais...</p>
-    </section>
+  <section id="projetos">
+    <h2>Projetos</h2>
+    <div class="projetos-grid">
+      <div class="projeto-card">
+        <h3>Pesquisa sobre Comércio Exterior</h3>
+        <p>Análise de tendências globais no comércio exterior.</p>
+      </div>
+      <div class="projeto-card">
+        <h3>Simulação da ONU</h3>
+        <p>Participação em simulações de debates internacionais.</p>
+      </div>
+      <div class="projeto-card">
+        <h3>Análise de Políticas Globais</h3>
+        <p>Estudo de políticas internacionais e seus impactos.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="projects" class="projects">
-        <h2>Meus Projetos</h2>
-        <div class="project-card">
-            <h3>Projeto 1</h3>
-            <p>Descrição do projeto...</p>
-        </div>
-    </section>
+  <section id="contato">
+    <h2>Contato</h2>
+    <form id="form-contato">
+      <input type="text" id="nome" placeholder="Seu nome" required>
+      <input type="email" id="email" placeholder="Seu e-mail" required>
+      <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/alexia-denardi-b439552a1/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/alexia_denardi_/"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fas fa-envelope"></i></a>
+    </div>
+  </section>
 
-    <section id="contact" class="contact">
-        <h2>Contato</h2>
-        <form>
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <textarea placeholder="Mensagem"></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+  <footer>
+    <p>&copy; 2025 Alexia Denardi. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
